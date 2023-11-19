@@ -31,7 +31,7 @@ for (i in 1:number_of_particles){
   sigma_s <- 4
   sigma_t <- sigma_a + sigma_s
   while (status==0) {
-    #Here I am going to determine variables of a 3-D random walk. Unlike the question in midsem the step size is variable, however I am considering
+    #Here I am going to determine variables of a 3-D random walk. The step size is variable, however I am considering
     #that the nucleus is uniform. Hence values must be uniformly spread out.
     s <- (1/sigma_t)*log(runif(1))
     theta <- runif(1, min=-pi, max=pi)
